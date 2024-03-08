@@ -86,3 +86,10 @@
             .weather {
                 display: none;
             }
+
+            .error-message {
+                color: red;
+                font-size: large;
+                font-weight: bold;
+                text-align: left;
+            }
