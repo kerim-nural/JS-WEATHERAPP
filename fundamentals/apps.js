@@ -16,6 +16,7 @@ async function checkWeather(country){
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = Math.round(data.wind.speed) + "km/h";
     //document.querySelector(".weather img").src = "images/" + data.weather[0].main.toLowerCase() + ".png";
+
     if (data.weather[0].main === "Clouds") {
         weatherIcon.src = "images/clouds.png";
     } else if (data.weather[0].main === "Clear") {
@@ -30,6 +31,7 @@ async function checkWeather(country){
         weatherIcon = "images/snow.png";
     } 
 
+    document.querySelector(".weather").style.display = "block";
     
 }
 
